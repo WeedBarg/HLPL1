@@ -21,7 +21,7 @@ void swap_v (int a, int b)
 
 void swap_r (int& a, int& b)
 {
-    int temp;
+    int temp; //if we want to work we add "&" so it becomes an address
     temp = a, a = b;
     b = temp;
     print(a,b);
