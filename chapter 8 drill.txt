@@ -15,8 +15,8 @@ void swap_r(int& a,int& b)
     a=b;
     b=temp; 
 };
-//void swap_cr(const int& a, const int& b) //this one does not compile because a cannot be equal to b
-//{                                        //The constant variable values cannot be changed after its initialization.
+//void swap_cr(const int& a, const int& b)
+//{                                       
 //    int temp; 
 //    temp = a; 
 //    a=b; 
