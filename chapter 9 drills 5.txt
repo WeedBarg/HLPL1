@@ -236,7 +236,7 @@ void Date::add_day(int n)
 		{
 			m = Month::jan;
 			if (++y > 3000)
-				cout << "It is not the year 3000; busted" << endl;
+				cout << "It's not the year 3000" << endl;
 		}
 		else
 			m = Month(nextM);			
