@@ -1,7 +1,5 @@
-/*
-The original swap_cr won't compile as you can't modify a constant.
-Solution: create two temp values.
-*/
+/*the swap_cr function doesn't work beacause the value of a constant cannot be changed
+so we assign to it a temp value and we swap those*/
 
 
 #include "std_lib_facilities.h"
@@ -16,7 +14,6 @@ void swap_v (int a, int b)
     int temp;
     temp = a, a = b;
     b = temp;
-    print(a,b);
 }
 
 void swap_r (int& a, int& b)
@@ -24,7 +21,6 @@ void swap_r (int& a, int& b)
     int temp; //if we want to work we add "&" so it becomes an address
     temp = a, a = b;
     b = temp;
-    print(a,b);
 }
 
 void swap_cr (const int& a, const int& b)
